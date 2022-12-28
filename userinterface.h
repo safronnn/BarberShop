@@ -7,6 +7,7 @@
 #include "expense.h"
 #include "expenselist.h"
 #include "expenseinputscreen.h"
+#include "result.h"
 #include <iostream>
 using namespace std;
 
@@ -17,7 +18,7 @@ private:
     ServiceInputScreen* PtrServiceInputScreen;
     ExpenseList* PtrExpenseList;
     ExpenseInputScreen* PtrExpenseInputScreen;
-    //Result* PtrResult;
+    Result* PtrResult;
     char ch;
 
 public:
