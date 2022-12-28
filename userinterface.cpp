@@ -4,12 +4,12 @@
 // Методы класса UserInterface - Главный класс приложения-------------------------------------
 UserInterface::UserInterface() {
     PtrServiceList = new ServiceList;
-    //PtrExpenseList = new ExpenseList;
+    PtrExpenseList = new ExpenseList;
 }
 
 UserInterface::~UserInterface(){
     delete PtrServiceList;
-    //delete PtrExpenseList;
+    delete PtrExpenseList;
 }
 
 void UserInterface::interact() {
@@ -39,15 +39,15 @@ void UserInterface::interact() {
         }
         else if (ch == 'r')
         {
-            //PtrExpenseInputScreen = new ExpenseInputScreen(PtrExpenseList);
-            //PtrExpenseInputScreen->setExpense();
-            //delete PtrExpenseInputScreen;
+            PtrExpenseInputScreen = new ExpenseInputScreen(PtrExpenseList);
+            PtrExpenseInputScreen->setExpense();
+            delete PtrExpenseInputScreen;
             system("pause");
             system("cls");
         }
         else if (ch == 't')
         {
-            //PtrExpenseList->displayExp();
+            PtrExpenseList->displayExp();
             system("pause");
             system("cls");
         }
