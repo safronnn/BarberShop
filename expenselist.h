@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "expense.h"
 using namespace std;
 
 // Класс ExpenseList(Список затрат)------------------------------------------------------------------------------
