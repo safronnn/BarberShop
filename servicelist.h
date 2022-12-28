@@ -1,6 +1,7 @@
 #ifndef SERVICELIST
 #define SERVICELIST
 
+#include "service.h"
 #include <iostream>
 #include <vector>
 #include <list>
