@@ -53,9 +53,9 @@ void UserInterface::interact() {
         }
         else if (ch == 'y')
         {
-            //PtrResult = new Result(PtrServiceList, PtrExpenseList);
-            //PtrResult->displayResult();
-            //delete PtrResult;
+            PtrResult = new Result(PtrServiceList, PtrExpenseList);
+            PtrResult->displayResult();
+            delete PtrResult;
             system("pause");
             system("cls");
         }
