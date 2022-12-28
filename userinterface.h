@@ -4,6 +4,9 @@
 #include "service.h"
 #include "servicelist.h"
 #include "serviceinputscreen.h"
+#include "expense.h"
+#include "expenselist.h"
+#include "expenseinputscreen.h"
 #include <iostream>
 using namespace std;
 
@@ -12,8 +15,8 @@ class UserInterface{
 private:
     ServiceList* PtrServiceList;
     ServiceInputScreen* PtrServiceInputScreen;
-    //ExpenseList* PtrExpenseList;
-    //ExpenseInputScreen* PtrExpenseInputScreen;
+    ExpenseList* PtrExpenseList;
+    ExpenseInputScreen* PtrExpenseInputScreen;
     //Result* PtrResult;
     char ch;
 
