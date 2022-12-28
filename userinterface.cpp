@@ -3,12 +3,12 @@
 
 // Методы класса UserInterface - Главный класс приложения-------------------------------------
 UserInterface::UserInterface() {
-    //PtrServiceList = new ServiceList;
+    PtrServiceList = new ServiceList;
     //PtrExpenseList = new ExpenseList;
 }
 
 UserInterface::~UserInterface(){
-    //delete PtrServiceList;
+    delete PtrServiceList;
     //delete PtrExpenseList;
 }
 
@@ -25,17 +25,17 @@ void UserInterface::interact() {
 
         if (ch == 'w')
         {
-            //PtrServiceInputScreen = new ServiceInputScreen(PtrServiceList);
-            //PtrServiceInputScreen->setService();
-            //delete PtrServiceInputScreen;
+            PtrServiceInputScreen = new ServiceInputScreen(PtrServiceList);
+            PtrServiceInputScreen->setService();
+            delete PtrServiceInputScreen;
             system("pause");
             system("cls");
         }
         else if (ch == 'e')
         {
-            //PtrServiceList->displayService();
-            //system("pause");
-            //system("cls");
+            PtrServiceList->displayService();
+            system("pause");
+            system("cls");
         }
         else if (ch == 'r')
         {
